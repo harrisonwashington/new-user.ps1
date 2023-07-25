@@ -8,6 +8,3 @@ New-LocalUser -Name $Username -Password $Password -FullName $FullName
 
 # Set the user's account expiration date
 Set-LocalUserExpiration -User $Username -ExpirationDate (Get-Date).AddDays(365)
-
-# Add the user to the Administrators group
-Add-LocalGroupMember -Group Administrators -Member $Username
